@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlikler - Öğrenci Topluluğu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ortak Gezinme Menüsü -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="etkinlikler.html">Etkinlikler</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Yaklaşan Etkinlikler</h1>
+
+            <!-- Arama Alanı -->
+            <div class="search-container">
+                <label for="search-input">Etkinlik başlığına göre ara:</label>
+                <input type="text" id="search-input" placeholder="Aramak için yazın...">
+                <button id="clear-btn">Temizle</button>
+            </div>
+
+            <!-- Sayaç ve Sonuç Mesajı -->
+            <p id="event-count">Gösterilen etkinlik sayısı: 5</p>
+            <p id="no-results" style="display: none;">Aramanıza uygun etkinlik bulunamadı.</p>
+
+            <!-- Etkinlik Kartları (En az 5 özgün kart) -->
+            <div class="events-grid" id="events-list">
+                
+                <article class="event-card">
+                    <h2>Web Geliştirme Atölyesi</h2>
+                    <p><strong>Tarih:</strong> 15 Kasım 2026</p>
+                    <p><strong>Yer:</strong> Bilgisayar Laboratuvarı 3</p>
+                    <p>HTML, CSS ve JavaScript temellerini uygulamalı örneklerle adım adım öğrenin.</p>
+                </article>
+
+                <article class="event-card">
+                    <h2>Üniversiteler Arası Satranç Turnuvası</h2>
+                    <p><strong>Tarih:</strong> 20 Kasım 2026</p>
+                    <p><strong>Yer:</strong> Öğrenci Merkezi</p>
+                    <p>Dereceye girenlere sürpriz ödüllerin verileceği hızlı satranç turnuvasında yarışın.</p>
+                </article>
+
+                <article class="event-card">
+                    <h2>Yapay Zeka ve Gelecek Semineri</h2>
+                    <p><strong>Tarih:</strong> 25 Kasım 2026</p>
+                    <p><strong>Yer:</strong> Ana Konferans Salonu</p>
+                    <p>Yapay zekanın yazılım dünyasındaki ve akademik gelecekteki etkilerini tartışıyoruz.</p>
+                </article>
+
+                <article class="event-card">
+                    <h2>Öğrenci Sinema Kulübü Film Gösterimi</h2>
+                    <p><strong>Tarih:</strong> 2 Aralık 2026</p>
+                    <p><strong>Yer:</strong> Sinema Salonu</p>
+                    <p>Teknoloji temalı belgesel gösterimi ve ardından katılımcılarla açık oturum.</p>
+                </article>
+
+                <article class="event-card">
+                    <h2>24 Saatlik Hackathon Yarışması</h2>
+                    <p><strong>Tarih:</strong> 10 Aralık 2026</p>
+                    <p><strong>Yer:</strong> Mühendislik Fakültesi</p>
+                    <p>Takımınızı kurun, teknolojik fikirlerinizi geliştirin ve 24 saat boyunca kod yazın.</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Öğrenci Topluluğu. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
